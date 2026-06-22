@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PakVista – Discover the breathtaking landscapes, culture, and destinations of Pakistan." />
-  <title>PakVista - Home</title>
+  <meta name="description" content="PakVista – Your guide to Pakistan's most breathtaking destinations. Explore Lahore, Hunza, Karachi, Swat and beyond." />
+  <title>PakVista – Discover Pakistan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,12 +26,16 @@
   </nav>
 
   <!-- ======================================================
-       Header
+       Header / Hero
   ======================================================= -->
-  <header>
-    <div class="container section">
+  <header class="hero">
+    <div class="container hero-inner">
       <h1>Welcome to PakVista</h1>
-      <p>Your gateway to exploring the stunning beauty, rich culture, and vibrant cities of Pakistan.</p>
+      <p class="hero-tagline">
+        Your gateway to Pakistan's most extraordinary landscapes, vibrant cities,
+        ancient heritage, and warm hospitality — all in one place.
+      </p>
+      <a href="#destinations" class="btn-primary">Explore Destinations</a>
     </div>
   </header>
 
@@ -40,63 +44,143 @@
   ======================================================= -->
   <main>
 
-    <!-- Hero Section -->
-    <section class="section">
+    <!-- Introduction Section -->
+    <section class="section intro-section" aria-labelledby="intro-heading">
       <div class="container">
-        <h2>Discover Pakistan</h2>
-
-        <!-- Hero Image Placeholder -->
-        <div class="img-placeholder">
-          Hero Image<br />(e.g., mountain landscape)
-        </div>
-
+        <h2 id="intro-heading">Discover the Beauty of Pakistan</h2>
         <p>
-          Pakistan is a land of extraordinary contrasts — from the snow-capped peaks of the Karakoram
-          and Himalayas in the north, to the golden deserts of Cholistan in the south. Explore
-          ancient civilisations, bustling metropolitan cities, and serene river valleys all in one
-          incredible country.
+          Pakistan is a land of extraordinary contrasts and unmatched natural splendour.
+          From the snow-capped peaks of the Karakoram and Himalayas in the north — home to
+          five of the world's fourteen 8,000-metre mountains — to the golden sand dunes of
+          the Cholistan Desert in the south, this country holds wonders at every turn.
         </p>
         <p>
-          Use the navigation above to explore our featured destinations: the cultural heart of
-          <a href="lahore.html">Lahore</a>, the majestic valleys of <a href="hunza.html">Hunza</a>,
-          the coastal metropolis of <a href="karachi.html">Karachi</a>, and the lush green beauty
-          of <a href="swat.html">Swat</a>.
+          Ancient civilisations flourished along the Indus River thousands of years ago,
+          leaving behind archaeological treasures such as Mohenjo-daro and Harappa. Today,
+          Pakistan blends that deep historical legacy with bustling modern metropolises,
+          colourful bazaars, and some of the most hospitable people on earth.
+        </p>
+        <p>
+          PakVista was created to showcase the very best of Pakistan's tourism: the Mughal
+          grandeur of Lahore, the turquoise lakes of Hunza, the coastal energy of Karachi,
+          and the lush green valleys of Swat. Whether you are planning your first visit or
+          rediscovering a homeland, we hope these pages inspire your next journey.
         </p>
       </div>
     </section>
 
     <!-- Featured Destinations Section -->
-    <section class="section">
+    <section class="section destinations-section" id="destinations" aria-labelledby="dest-heading">
       <div class="container">
-        <h2>Featured Destinations</h2>
+        <h2 id="dest-heading">Featured Destinations</h2>
+        <p>
+          Choose from four iconic destinations, each offering a completely different
+          face of Pakistan. Click any card to learn more.
+        </p>
+
+        <div class="card-grid">
+
+          <!-- Home card -->
+          <article class="dest-card" aria-label="Home">
+            <div class="card-icon">🏠</div>
+            <h3><a href="index.html">Home</a></h3>
+            <p>
+              Start your PakVista journey right here. Browse our introduction to
+              Pakistan's culture, climate, and travel essentials before diving into
+              individual destinations.
+            </p>
+            <a href="index.html" class="card-link">You are here →</a>
+          </article>
+
+          <!-- Lahore card -->
+          <article class="dest-card" aria-label="Lahore">
+            <div class="card-icon">🕌</div>
+            <h3><a href="lahore.html">Lahore</a></h3>
+            <p>
+              The cultural heart of Pakistan. Home to the magnificent Badshahi Mosque,
+              the Lahore Fort, and the walled city's labyrinthine food streets — Lahore
+              pulses with Mughal history and modern energy in equal measure.
+            </p>
+            <a href="lahore.html" class="card-link">Explore Lahore →</a>
+          </article>
+
+          <!-- Hunza card -->
+          <article class="dest-card" aria-label="Hunza">
+            <div class="card-icon">🏔️</div>
+            <h3><a href="hunza.html">Hunza</a></h3>
+            <p>
+              Nestled in the Gilgit-Baltistan region at an altitude of 2,438 metres,
+              Hunza Valley is renowned for its dramatic mountain scenery, ancient Baltit
+              Fort, vibrant cherry blossoms in spring, and the legendary Attabad Lake.
+            </p>
+            <a href="hunza.html" class="card-link">Explore Hunza →</a>
+          </article>
+
+          <!-- Karachi card -->
+          <article class="dest-card" aria-label="Karachi">
+            <div class="card-icon">🌊</div>
+            <h3><a href="karachi.html">Karachi</a></h3>
+            <p>
+              Pakistan's largest city and economic hub sits on the Arabian Sea coast.
+              Clifton Beach, the National Museum, Burns Road's legendary street food,
+              and a thriving arts scene make Karachi endlessly fascinating to explore.
+            </p>
+            <a href="karachi.html" class="card-link">Explore Karachi →</a>
+          </article>
+
+          <!-- Swat card -->
+          <article class="dest-card" aria-label="Swat">
+            <div class="card-icon">🌿</div>
+            <h3><a href="swat.html">Swat</a></h3>
+            <p>
+              Often called the "Switzerland of Pakistan", Swat Valley in Khyber
+              Pakhtunkhwa offers lush pine forests, cascading rivers, trout fishing,
+              ancient Buddhist stupas, and breathtaking green meadows at Malam Jabba.
+            </p>
+            <a href="swat.html" class="card-link">Explore Swat →</a>
+          </article>
+
+        </div><!-- /.card-grid -->
+      </div>
+    </section>
+
+    <!-- Destinations Summary Table -->
+    <section class="section table-section" aria-labelledby="table-heading">
+      <div class="container">
+        <h2 id="table-heading">Destinations at a Glance</h2>
         <table>
           <thead>
             <tr>
-              <th>Destination</th>
-              <th>Region</th>
-              <th>Known For</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Region</th>
+              <th scope="col">Known For</th>
+              <th scope="col">Best Season</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><a href="lahore.html">Lahore</a></td>
               <td>Punjab</td>
-              <td>Mughal architecture, food, culture</td>
+              <td>Mughal architecture, food culture, Sufi shrines</td>
+              <td>October – March</td>
             </tr>
             <tr>
               <td><a href="hunza.html">Hunza</a></td>
               <td>Gilgit-Baltistan</td>
-              <td>Mountain scenery, cherry blossoms</td>
+              <td>Mountain scenery, cherry blossoms, Attabad Lake</td>
+              <td>April – October</td>
             </tr>
             <tr>
               <td><a href="karachi.html">Karachi</a></td>
               <td>Sindh</td>
-              <td>Coastline, business hub, street food</td>
+              <td>Coastline, street food, history, urban culture</td>
+              <td>November – February</td>
             </tr>
             <tr>
               <td><a href="swat.html">Swat</a></td>
               <td>Khyber Pakhtunkhwa</td>
-              <td>Lush valleys, rivers, ancient ruins</td>
+              <td>Lush valleys, rivers, ancient Buddhist ruins</td>
+              <td>May – September</td>
             </tr>
           </tbody>
         </table>
